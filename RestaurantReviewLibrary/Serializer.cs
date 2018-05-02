@@ -8,6 +8,10 @@ using Newtonsoft.Json;
 
 namespace RestaurantReview.BL
 {
+    class MyClass
+    {
+
+    }
     public class Serializer
     {
         public static void SerializeObj<T>(List<T> serializeObj, string FileName, bool overwrite)
