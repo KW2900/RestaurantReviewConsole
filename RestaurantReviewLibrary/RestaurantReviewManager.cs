@@ -58,10 +58,6 @@ namespace RestaurantReviewLibrary
         {
             IOrderedEnumerable<Restaurant> sortedList = null;
             StringBuilder sortedString = new StringBuilder();
-            foreach(Restaurant r in sortRestaurants)
-            {
-                r.AvgRating = CalculateAvgRating(r);
-            }
 
             switch (order.ToLower())
             {
@@ -76,8 +72,7 @@ namespace RestaurantReviewLibrary
             }
 
             return sortedList;
-
-            //foreach(Restaurant res in sortedList)
+            //foreach (Restaurant res in sortedList)
             //{
             //    sortedString.Append($"{res.ID} || {res.Name} || {res.AvgRating}\n");
             //}
